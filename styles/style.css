@@ -145,7 +145,8 @@ nav>ul a {
         margin: 0px;
         flex-direction: column;
     }
-    nav > ul {
+
+    nav>ul {
         margin-top: 20px;
     }
 
@@ -253,7 +254,7 @@ nav>ul a {
 
 .skill>.all-cards {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 24px;
     margin-bottom: 30px;
 }
@@ -289,25 +290,90 @@ nav>ul a {
     letter-spacing: 0%;
     text-align: left;
 }
+
 /* responsive skill section */
 @media screen and (max-width:576px) {
-    .btn-primary{
+    .btn-primary {
         padding: 10px;
     }
-    .skill{
+
+    .skill {
         margin: 0;
         width: 100vw;
         margin-top: 50px;
     }
-    .skill>p{
+
+    .skill>p {
         padding: 20px;
     }
-    .skill > .all-cards{
+
+    .skill>.all-cards {
         padding: 20px;
         grid-template-columns: 1fr;
     }
-    
+
 }
 
 
 /* msg section */
+footer {
+    display: flex;
+    background: rgb(255, 248, 243);
+}
+
+footer>.message {
+    margin: 130px 230px 130px 230px;
+    gap: 117px;
+    display: flex;
+}
+
+footer>.message>.description {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+
+footer>.message>.description>h1 {
+    color: rgb(24, 24, 24);
+    font-family: Open Sans;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+footer>.message>.description>p {
+    color: rgb(71, 71, 71);
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+footer>.message>.description>.icons {
+    display: flex;
+    gap: 10px;
+}
+
+
+footer>.message>.msg {
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+    align-items: start;
+}
+footer>.message>.msg>input{
+    border-style: none;
+}
+footer>.message>.msg>.text {
+    width: 461px;
+    height: 64px;
+}
+
+footer>.message>.msg>.msg-box {
+    height: 180px;
+}
